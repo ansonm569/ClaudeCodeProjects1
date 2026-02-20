@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP - Anson & Blythe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">A &amp; B</a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="registry.html">Registry</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="rsvp.html" class="active">RSVP</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="rsvp" class="section page-section">
+        <div class="container">
+            <h2 class="section-title">RSVP</h2>
+            <div class="section-divider"></div>
+            <p class="rsvp-subtitle">Kindly respond by March 1, 2027</p>
+
+            <!-- Guest Lookup -->
+            <div id="lookup-container" class="lookup-container">
+                <h3 class="lookup-title">Find Your Invitation</h3>
+                <p class="lookup-subtitle">Enter your name to retrieve your reservation</p>
+                <form id="lookup-form" class="lookup-form">
+                    <div class="lookup-inputs">
+                        <div class="form-group">
+                            <label for="lookup-firstname">First Name</label>
+                            <input type="text" id="lookup-firstname" name="firstname" placeholder="First name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lookup-lastname">Last Name</label>
+                            <input type="text" id="lookup-lastname" name="lastname" placeholder="Last name">
+                        </div>
+                    </div>
+                    <p class="lookup-help">Enter your first name, last name, or both to search</p>
+                    <button type="submit" class="btn-lookup">Find My Invitation</button>
+                </form>
+                <div id="lookup-error" class="lookup-error hidden">
+                    <p>We couldn't find your reservation. Please check your spelling or contact the couple.</p>
+                </div>
+            </div>
+
+            <!-- RSVP Form (hidden until guest is found) -->
+            <div id="rsvp-container" class="rsvp-container hidden">
+                <div id="guest-info" class="guest-info"></div>
+                <form id="rsvp-form" class="rsvp-form">
+                    <input type="hidden" id="guest-id" name="guestId">
+
+                    <div class="form-group">
+                        <label for="guest-email">Email Address</label>
+                        <input type="email" id="guest-email" name="email" required placeholder="your@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Who from your party will attend each event?</label>
+                        <div id="party-attendance-container">
+                            <!-- Party member attendance will be dynamically generated here -->
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="dietary-group">
+                        <label for="dietary">Dietary Restrictions</label>
+                        <input type="text" id="dietary" name="dietary" placeholder="Any allergies or dietary needs">
+                    </div>
+
+                    <div class="form-group" id="song-group">
+                        <label for="song">Song Request</label>
+                        <input type="text" id="song" name="song" placeholder="What song gets you on the dance floor?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message for the Couple</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Share your love and well wishes..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Send RSVP</button>
+                </form>
+            </div>
+
+            <div id="rsvp-success" class="rsvp-success hidden">
+                <div class="success-icon">✓</div>
+                <h3>Thank You!</h3>
+                <p>Your RSVP has been received. We can't wait to celebrate with you!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-names">Anson &amp; Blythe</p>
+            <p class="footer-date">April 17, 2027</p>
+        </div>
+    </footer>
+
+    <script src="guestlist.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Anson & Blythe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">A &amp; B</a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="registry.html">Registry</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="gallery" class="section section-alt page-section">
+        <div class="container">
+            <h2 class="section-title">Our Moments</h2>
+            <div class="section-divider"></div>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in visible">
+                    <img src="photos/2025 OCT 5 Proposal (180).jpg" alt="Engagement Photo 1" class="gallery-photo">
+                </div>
+                <div class="gallery-item fade-in visible">
+                    <img src="photos/2025 OCT 5 Proposal (1).jpg" alt="Engagement Photo 2" class="gallery-photo">
+                </div>
+                <div class="gallery-item fade-in visible">
+                    <img src="photos/2025 OCT 5 Proposal (102).jpg" alt="Engagement Photo 3" class="gallery-photo">
+                </div>
+                <div class="gallery-item fade-in visible">
+                    <img src="photos/2025 OCT 5 Proposal (119).jpg" alt="Engagement Photo 4" class="gallery-photo">
+                </div>
+                <div class="gallery-item fade-in visible">
+                    <img src="photos/2025 OCT 5 Proposal (153).jpg" alt="Engagement Photo 5" class="gallery-photo">
+                </div>
+                <div class="gallery-item fade-in visible">
+                    <img src="photos/2025 OCT 5 Proposal (187).jpg" alt="Engagement Photo 6" class="gallery-photo">
+                </div>
+                <div class="gallery-item fade-in visible">
+                    <img src="photos/2025 OCT 5 Proposal (148).jpg" alt="Engagement Photo 7" class="gallery-photo">
+                </div>
+                <div class="gallery-item fade-in visible">
+                    <img src="photos/2025 OCT 5 Proposal (163).jpg" alt="Engagement Photo 8" class="gallery-photo">
+                </div>
+                <div class="gallery-item fade-in visible">
+                    <img src="photos/2025 OCT 5 Proposal (27).jpg" alt="Engagement Photo 9" class="gallery-photo">
+                </div>
+                <div class="gallery-item fade-in visible">
+                    <img src="photos/2025 OCT 5 Proposal (59).jpg" alt="Engagement Photo 10" class="gallery-photo">
+                </div>
+                <div class="gallery-item fade-in visible">
+                    <img src="photos/2025 OCT 5 Proposal (80).jpg" alt="Engagement Photo 11" class="gallery-photo">
+                </div>
+                <div class="gallery-item fade-in visible">
+                    <img src="photos/2025 OCT 5 Proposal (98).jpg" alt="Engagement Photo 12" class="gallery-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox hidden">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
+        <button class="lightbox-next" aria-label="Next">&#8250;</button>
+        <img id="lightbox-img" src="" alt="Gallery Photo">
+        <div class="lightbox-counter"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-names">Anson &amp; Blythe</p>
+            <p class="footer-date">April 17, 2027</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
