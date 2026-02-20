@@ -74,7 +74,7 @@ async function handleSubmit(req, res) {
             .map(m => m.name);
 
         await resend.emails.send({
-            from: 'Blythe & Anson <rsvp@blytheandanson.com>',
+            from: 'Blythe & Anson <rsvp@rsvp.blytheandanson.com>',
             to: email,
             subject: `RSVP Confirmed — Blythe & Anson's Wedding`,
             html: buildEmailHtml({
