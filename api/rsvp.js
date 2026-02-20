@@ -44,7 +44,7 @@ async function handleSubmit(req, res) {
     const { error: dbError } = await supabase
         .from('rsvps')
         .upsert({
-            party_id: groupCode,
+            group_code: groupCode,
             primary_guest_id: primaryGuestId,
             primary_guest_name: primaryGuestName,
             email,
