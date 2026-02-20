@@ -25,7 +25,7 @@ module.exports = async function handler(req, res) {
 // -------------------------------------------------------
 async function handleSubmit(req, res) {
     const {
-        partyId,
+        groupCode,
         primaryGuestId,
         primaryGuestName,
         email,
@@ -36,7 +36,7 @@ async function handleSubmit(req, res) {
         message
     } = req.body;
 
-    if (!partyId || !primaryGuestId || !email) {
+    if (!groupCode || !primaryGuestId || !email) {
         return res.status(400).json({ error: 'Missing required fields' });
     }
 
@@ -44,7 +44,7 @@ async function handleSubmit(req, res) {
     const { error: dbError } = await supabase
         .from('rsvps')
         .upsert({
-            party_id: partyId,
+            party_id: groupCode,
             primary_guest_id: primaryGuestId,
             primary_guest_name: primaryGuestName,
             email,

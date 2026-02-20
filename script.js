@@ -197,13 +197,13 @@ document.addEventListener('DOMContentLoaded', () => {
     function showGuestSelection(matches) {
         lookupError.classList.add('hidden');
 
-        // Group matches by partyId to show complete parties
+        // Group matches by groupCode to show complete parties
         const partyMap = new Map();
         matches.forEach(guest => {
-            if (!partyMap.has(guest.partyId)) {
+            if (!partyMap.has(guest.groupCode)) {
                 // Get all members of this party
-                const partyMembers = guestList.filter(g => g.partyId === guest.partyId);
-                partyMap.set(guest.partyId, {
+                const partyMembers = guestList.filter(g => g.groupCode === guest.groupCode);
+                partyMap.set(guest.groupCode, {
                     primaryGuest: guest,
                     members: partyMembers
                 });
@@ -255,8 +255,8 @@ document.addEventListener('DOMContentLoaded', () => {
         lookupContainer.style.display = 'none';
         rsvpContainer.classList.remove('hidden');
 
-        // Find all party members with the same partyId
-        const partyMembers = guestList.filter(g => g.partyId === guest.partyId);
+        // Find all party members with the same groupCode
+        const partyMembers = guestList.filter(g => g.groupCode === guest.groupCode);
         currentGuest = { ...guest, partyMembers };
 
         // Display guest and party information
@@ -382,7 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }));
 
         const payload = {
-            partyId: currentGuest.partyId,
+            groupCode: currentGuest.groupCode,
             primaryGuestId: parseInt(formData.get('guestId')),
             primaryGuestName: `${currentGuest.firstName} ${currentGuest.lastName}`,
             email: formData.get('email'),
