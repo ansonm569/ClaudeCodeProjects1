@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const banner = document.createElement('p');
             banner.style.cssText = 'background:#e8f0e0;border:1px solid #c0d4b0;border-radius:6px;padding:10px 16px;font-size:0.9rem;margin-bottom:16px;color:#3d5a30;';
             banner.textContent = 'You\'ve already submitted an RSVP. You can update it below and resubmit.';
-            rsvpContainer.querySelector('.form-section')?.prepend(banner);
+            rsvpContainer.querySelector('.rsvp-form')?.prepend(banner);
         }
 
         // Scroll to RSVP form

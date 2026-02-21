@@ -54,7 +54,7 @@ async function handleSubmit(req, res) {
             song_request: songRequest || null,
             message: message || null,
             updated_at: new Date().toISOString()
-        }, { onConflict: 'party_id' });
+        }, { onConflict: 'group_code' });
 
     if (dbError) {
         console.error('Supabase error:', dbError);
@@ -64,7 +64,7 @@ async function handleSubmit(req, res) {
     // Send confirmation email (non-blocking — a failure here doesn't fail the RSVP)
     try {
         const firstName = primaryGuestName.split(' ')[0];
-        const editLink = `https://blytheandanson.com/rsvp.html?guestId=${primaryGuestId}`;
+        const editLink = `https://blytheandanson.com/rsvp?guestId=${primaryGuestId}`;
 
         const welcomeAttendees = partyMembers
             .filter(m => partyAttendance[m.id]?.welcomeDrinks)
