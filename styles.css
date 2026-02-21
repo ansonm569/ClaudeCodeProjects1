@@ -646,13 +646,17 @@ body {
 }
 
 .radio-custom {
+    display: inline-block;
     width: 20px;
     height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     border-radius: 50%;
     border: 2px solid #ccc;
     position: relative;
     transition: border-color 0.3s ease;
     flex-shrink: 0;
+    box-sizing: border-box;
 }
 
 .radio-custom::after {
