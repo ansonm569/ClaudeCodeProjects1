@@ -797,14 +797,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: center;
+    align-items: stretch;
 }
 
 .guest-option {
     padding: 14px 28px;
     background: var(--color-white);
     border: 2px solid var(--color-primary);
-    border-radius: 50px;
+    border-radius: 12px;
     color: var(--color-text);
     font-family: var(--font-body);
     font-size: 0.95rem;
@@ -812,9 +812,11 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(139, 155, 126, 0.15);
-    max-width: 350px;
+    width: 100%;
     text-align: center;
-    white-space: nowrap;
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.5;
 }
 
 .guest-option:hover {

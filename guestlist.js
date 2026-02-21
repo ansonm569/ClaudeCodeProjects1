@@ -1,4 +1,3 @@
-// Guest list data - embedded to avoid CORS issues with file:// protocol
 const guestListData = [
   {
     "id": 1,
@@ -6,7 +5,7 @@ const guestListData = [
     "firstName": "Anson",
     "lastName": "MacKinney",
     "side": "Anson",
-    "relation": "Immediate Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -15,7 +14,7 @@ const guestListData = [
     "firstName": "Blythe",
     "lastName": "MacKinney",
     "side": "Blythe",
-    "relation": "Immediate Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -24,7 +23,7 @@ const guestListData = [
     "firstName": "Kristy",
     "lastName": "Dowers",
     "side": "Anson",
-    "relation": "Immediate Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -33,7 +32,7 @@ const guestListData = [
     "firstName": "Gordon",
     "lastName": "MacKinney",
     "side": "Anson",
-    "relation": "Immediate Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -42,7 +41,7 @@ const guestListData = [
     "firstName": "Taryn",
     "lastName": "Mackinney",
     "side": "Anson",
-    "relation": "Immediate Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -51,7 +50,7 @@ const guestListData = [
     "firstName": "Brian",
     "lastName": "Rawn",
     "side": "Anson",
-    "relation": "Immediate Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -60,7 +59,7 @@ const guestListData = [
     "firstName": "Lillian",
     "lastName": "MacKinney",
     "side": "Anson",
-    "relation": "Immediate Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -69,7 +68,7 @@ const guestListData = [
     "firstName": "Harly",
     "lastName": "Weenorface",
     "side": "Anson",
-    "relation": "Immediate Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -78,7 +77,7 @@ const guestListData = [
     "firstName": "Reece",
     "lastName": "MacKinney",
     "side": "Anson",
-    "relation": "Immediate Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -87,7 +86,7 @@ const guestListData = [
     "firstName": "Ellie",
     "lastName": "Toll",
     "side": "Anson",
-    "relation": "Immediate Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -96,7 +95,7 @@ const guestListData = [
     "firstName": "Merrick",
     "lastName": "MacKinney",
     "side": "Anson",
-    "relation": "Immediate Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -105,7 +104,7 @@ const guestListData = [
     "firstName": "Dennis",
     "lastName": "Owen",
     "side": "Blythe",
-    "relation": "Immediate Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -114,7 +113,7 @@ const guestListData = [
     "firstName": "Barb",
     "lastName": "Owen",
     "side": "Blythe",
-    "relation": "Immediate Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -123,7 +122,7 @@ const guestListData = [
     "firstName": "Hayley",
     "lastName": "Black",
     "side": "Blythe",
-    "relation": "Immediate Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -132,7 +131,7 @@ const guestListData = [
     "firstName": "Jeremy",
     "lastName": "Black",
     "side": "Blythe",
-    "relation": "Immediate Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -141,7 +140,7 @@ const guestListData = [
     "firstName": "Clint",
     "lastName": "MacKinney",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -150,7 +149,7 @@ const guestListData = [
     "firstName": "Ellen",
     "lastName": "MacKinney",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -159,7 +158,7 @@ const guestListData = [
     "firstName": "Cameron",
     "lastName": "MacKinney",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -168,7 +167,7 @@ const guestListData = [
     "firstName": "Connor",
     "lastName": "MacKinney",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -177,7 +176,7 @@ const guestListData = [
     "firstName": "Nada",
     "lastName": "MacKinney",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -186,7 +185,7 @@ const guestListData = [
     "firstName": "Carrick",
     "lastName": "Winkleman",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -195,7 +194,7 @@ const guestListData = [
     "firstName": "Shonna",
     "lastName": "Doweres",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -204,7 +203,7 @@ const guestListData = [
     "firstName": "Henry",
     "lastName": "Seeley",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -213,7 +212,7 @@ const guestListData = [
     "firstName": "Avery",
     "lastName": "Seeley",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -222,7 +221,7 @@ const guestListData = [
     "firstName": "Linda",
     "lastName": "Dowers",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -231,7 +230,7 @@ const guestListData = [
     "firstName": "Janet",
     "lastName": "Slight",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -240,7 +239,7 @@ const guestListData = [
     "firstName": "Gary",
     "lastName": "Skinner",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -249,7 +248,7 @@ const guestListData = [
     "firstName": "Mary",
     "lastName": "Slight",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -258,7 +257,7 @@ const guestListData = [
     "firstName": "Larry",
     "lastName": "Slight",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -267,7 +266,7 @@ const guestListData = [
     "firstName": "Ben",
     "lastName": "Slight",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -276,7 +275,7 @@ const guestListData = [
     "firstName": "Anna",
     "lastName": "Slight",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -285,7 +284,7 @@ const guestListData = [
     "firstName": "Ken",
     "lastName": "Slight",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -294,7 +293,7 @@ const guestListData = [
     "firstName": "Paula",
     "lastName": "Slight",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -303,7 +302,7 @@ const guestListData = [
     "firstName": "Clara",
     "lastName": "Slight",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -312,7 +311,7 @@ const guestListData = [
     "firstName": "Lisa",
     "lastName": "Slight",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -321,7 +320,7 @@ const guestListData = [
     "firstName": "Tim",
     "lastName": "",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -330,7 +329,7 @@ const guestListData = [
     "firstName": "Kim",
     "lastName": "House",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -339,7 +338,7 @@ const guestListData = [
     "firstName": "Brian",
     "lastName": "House",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -348,7 +347,7 @@ const guestListData = [
     "firstName": "Allison",
     "lastName": "Grimard",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -357,7 +356,7 @@ const guestListData = [
     "firstName": "Max",
     "lastName": "Grimard",
     "side": "Anson",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -366,7 +365,7 @@ const guestListData = [
     "firstName": "Stephanie",
     "lastName": "Bechthold",
     "side": "Anson",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -375,7 +374,7 @@ const guestListData = [
     "firstName": "Carl",
     "lastName": "Blackbird",
     "side": "Anson",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -384,7 +383,7 @@ const guestListData = [
     "firstName": "Charlotte",
     "lastName": "Smith",
     "side": "Anson",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -393,7 +392,7 @@ const guestListData = [
     "firstName": "Denice",
     "lastName": "Smith",
     "side": "Anson",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -402,7 +401,7 @@ const guestListData = [
     "firstName": "Sandy",
     "lastName": "Feller",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -411,7 +410,7 @@ const guestListData = [
     "firstName": "Joe",
     "lastName": "Feller",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -420,7 +419,7 @@ const guestListData = [
     "firstName": "Dana",
     "lastName": "Koch",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -429,7 +428,7 @@ const guestListData = [
     "firstName": "Robert",
     "lastName": "Koch",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -438,7 +437,7 @@ const guestListData = [
     "firstName": "Joel",
     "lastName": "Koch",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -447,7 +446,7 @@ const guestListData = [
     "firstName": "Brian",
     "lastName": "Feller",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -456,7 +455,7 @@ const guestListData = [
     "firstName": "David",
     "lastName": "Karpinsky",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -465,7 +464,7 @@ const guestListData = [
     "firstName": "Mark",
     "lastName": "Karpinsky",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -474,7 +473,7 @@ const guestListData = [
     "firstName": "Margie",
     "lastName": "Mosley",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -483,7 +482,7 @@ const guestListData = [
     "firstName": "David",
     "lastName": "Owen",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -492,7 +491,7 @@ const guestListData = [
     "firstName": "Sharon",
     "lastName": "Owen",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -501,7 +500,7 @@ const guestListData = [
     "firstName": "Michael",
     "lastName": "Owen",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -510,7 +509,7 @@ const guestListData = [
     "firstName": "Audrey",
     "lastName": "Owen",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -519,7 +518,7 @@ const guestListData = [
     "firstName": "Kiki",
     "lastName": "Dangoia",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -528,7 +527,7 @@ const guestListData = [
     "firstName": "Peter",
     "lastName": "Dangoia",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -537,7 +536,7 @@ const guestListData = [
     "firstName": "Steven",
     "lastName": "Dangoia",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -546,7 +545,7 @@ const guestListData = [
     "firstName": "Chelsea",
     "lastName": "Dangoia",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -555,7 +554,7 @@ const guestListData = [
     "firstName": "Mary Kate",
     "lastName": "Dangoia",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -564,7 +563,7 @@ const guestListData = [
     "firstName": "Bryson",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Extended Family",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -573,7 +572,7 @@ const guestListData = [
     "firstName": "Delaine",
     "lastName": "Karcanes",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -582,7 +581,7 @@ const guestListData = [
     "firstName": "Dianne",
     "lastName": "Karcanes",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -591,7 +590,7 @@ const guestListData = [
     "firstName": "Lou",
     "lastName": "Karcanes",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -600,7 +599,7 @@ const guestListData = [
     "firstName": "Maddie",
     "lastName": "Basirico",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -609,7 +608,7 @@ const guestListData = [
     "firstName": "Andrew",
     "lastName": "Goldblat",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -618,7 +617,7 @@ const guestListData = [
     "firstName": "Kathy",
     "lastName": "Basirico",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -627,7 +626,7 @@ const guestListData = [
     "firstName": "Jim",
     "lastName": "Basirico",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -636,7 +635,7 @@ const guestListData = [
     "firstName": "Danielle",
     "lastName": "Basirico",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -645,7 +644,7 @@ const guestListData = [
     "firstName": "Mark Patrick",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -654,7 +653,7 @@ const guestListData = [
     "firstName": "Jamie",
     "lastName": "Basirico",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -663,7 +662,7 @@ const guestListData = [
     "firstName": "Cindy",
     "lastName": "Christianson",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -672,7 +671,7 @@ const guestListData = [
     "firstName": "Mike",
     "lastName": "Christianson",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -681,7 +680,7 @@ const guestListData = [
     "firstName": "Joe",
     "lastName": "Christianson",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -690,7 +689,7 @@ const guestListData = [
     "firstName": "Danielle",
     "lastName": "Christianson",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -699,7 +698,7 @@ const guestListData = [
     "firstName": "Michelle",
     "lastName": "Christianson",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -708,7 +707,7 @@ const guestListData = [
     "firstName": "Adam",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -717,7 +716,7 @@ const guestListData = [
     "firstName": "Aaron",
     "lastName": "Christianson",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -726,7 +725,7 @@ const guestListData = [
     "firstName": "Patty",
     "lastName": "Westcott",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -735,7 +734,7 @@ const guestListData = [
     "firstName": "Dawn",
     "lastName": "Wescott",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -744,7 +743,7 @@ const guestListData = [
     "firstName": "Peter",
     "lastName": "Westcott",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -753,7 +752,7 @@ const guestListData = [
     "firstName": "Siobhan",
     "lastName": "Westcott",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -762,7 +761,7 @@ const guestListData = [
     "firstName": "Evan",
     "lastName": "Westcott",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -771,7 +770,7 @@ const guestListData = [
     "firstName": "Evans' +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -780,7 +779,7 @@ const guestListData = [
     "firstName": "Laura",
     "lastName": "Westcott",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -789,7 +788,7 @@ const guestListData = [
     "firstName": "Laura's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -798,7 +797,7 @@ const guestListData = [
     "firstName": "Denise",
     "lastName": "Smith",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -807,7 +806,7 @@ const guestListData = [
     "firstName": "Emily",
     "lastName": "Smith",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -816,7 +815,7 @@ const guestListData = [
     "firstName": "Emily +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -825,7 +824,7 @@ const guestListData = [
     "firstName": "Robin",
     "lastName": "Smith",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -834,7 +833,7 @@ const guestListData = [
     "firstName": "Chandler",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -843,7 +842,7 @@ const guestListData = [
     "firstName": "Linda",
     "lastName": "Roth",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -852,7 +851,7 @@ const guestListData = [
     "firstName": "Sam",
     "lastName": "Roth",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -861,7 +860,7 @@ const guestListData = [
     "firstName": "Sam's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -870,7 +869,7 @@ const guestListData = [
     "firstName": "Holly",
     "lastName": "Salois",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -879,7 +878,7 @@ const guestListData = [
     "firstName": "Craig",
     "lastName": "Rogers",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -888,7 +887,7 @@ const guestListData = [
     "firstName": "Anna",
     "lastName": "DeGregorio",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -897,7 +896,7 @@ const guestListData = [
     "firstName": "Jake",
     "lastName": "Abouyan",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -906,7 +905,7 @@ const guestListData = [
     "firstName": "Tanner",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -915,7 +914,7 @@ const guestListData = [
     "firstName": "Bob",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -924,7 +923,7 @@ const guestListData = [
     "firstName": "Jaque",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -933,7 +932,7 @@ const guestListData = [
     "firstName": "Mitch",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -942,7 +941,7 @@ const guestListData = [
     "firstName": "Martha",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -951,7 +950,7 @@ const guestListData = [
     "firstName": "Natalie",
     "lastName": "Guitiarrez",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -960,7 +959,7 @@ const guestListData = [
     "firstName": "Natalie's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -969,7 +968,7 @@ const guestListData = [
     "firstName": "Tania",
     "lastName": "Roa",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -978,7 +977,7 @@ const guestListData = [
     "firstName": "Tania's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -987,7 +986,7 @@ const guestListData = [
     "firstName": "Lauren",
     "lastName": "Vivier",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -996,7 +995,7 @@ const guestListData = [
     "firstName": "Lauren's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1005,7 +1004,7 @@ const guestListData = [
     "firstName": "Charlotte",
     "lastName": "Middleton",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1014,7 +1013,7 @@ const guestListData = [
     "firstName": "Charlotte's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1023,7 +1022,7 @@ const guestListData = [
     "firstName": "Jenny",
     "lastName": "Elwell",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1032,7 +1031,7 @@ const guestListData = [
     "firstName": "Jenny's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1041,7 +1040,7 @@ const guestListData = [
     "firstName": "Sammi",
     "lastName": "Chaves",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1050,7 +1049,7 @@ const guestListData = [
     "firstName": "Sammi's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1059,7 +1058,7 @@ const guestListData = [
     "firstName": "Claire",
     "lastName": "Bollman",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1068,7 +1067,7 @@ const guestListData = [
     "firstName": "Elizabeth",
     "lastName": "Peterson",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1077,7 +1076,7 @@ const guestListData = [
     "firstName": "Elizabeth's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1086,7 +1085,7 @@ const guestListData = [
     "firstName": "Christine",
     "lastName": "Evers",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1095,7 +1094,7 @@ const guestListData = [
     "firstName": "Kate",
     "lastName": "Constantine",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1104,7 +1103,7 @@ const guestListData = [
     "firstName": "Zoe",
     "lastName": "Bashkin",
     "side": "Anson",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1113,7 +1112,7 @@ const guestListData = [
     "firstName": "Toni",
     "lastName": "Johnson",
     "side": "Anson",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1122,7 +1121,7 @@ const guestListData = [
     "firstName": "John",
     "lastName": "Deusenberg",
     "side": "Anson",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1131,7 +1130,7 @@ const guestListData = [
     "firstName": "Jake",
     "lastName": "Long",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1140,7 +1139,7 @@ const guestListData = [
     "firstName": "Dre",
     "lastName": "Long",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1149,7 +1148,7 @@ const guestListData = [
     "firstName": "Cole",
     "lastName": "Knutson",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1158,7 +1157,7 @@ const guestListData = [
     "firstName": "Colleen",
     "lastName": "",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1167,7 +1166,7 @@ const guestListData = [
     "firstName": "Blake",
     "lastName": "Sells",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1176,7 +1175,7 @@ const guestListData = [
     "firstName": "Emily",
     "lastName": "Sells",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1185,7 +1184,7 @@ const guestListData = [
     "firstName": "Grahame",
     "lastName": "Evans",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1194,7 +1193,7 @@ const guestListData = [
     "firstName": "Cates",
     "lastName": "Saleeby",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1203,7 +1202,7 @@ const guestListData = [
     "firstName": "Shannon",
     "lastName": "Malloy",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1212,7 +1211,7 @@ const guestListData = [
     "firstName": "Andy",
     "lastName": "Werchniak",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1221,7 +1220,7 @@ const guestListData = [
     "firstName": "Lauren",
     "lastName": "Pederson",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1230,7 +1229,7 @@ const guestListData = [
     "firstName": "Cassandra",
     "lastName": "Kennie",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1239,7 +1238,7 @@ const guestListData = [
     "firstName": "Cassandra's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1248,7 +1247,7 @@ const guestListData = [
     "firstName": "Bernard",
     "lastName": "Coetzee",
     "side": "Both",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1257,7 +1256,7 @@ const guestListData = [
     "firstName": "Lisa",
     "lastName": "Nupen",
     "side": "Both",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1266,7 +1265,7 @@ const guestListData = [
     "firstName": "Laurence",
     "lastName": "Kruger",
     "side": "Both",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1275,7 +1274,7 @@ const guestListData = [
     "firstName": "Java",
     "lastName": "Mariwala",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1284,7 +1283,7 @@ const guestListData = [
     "firstName": "Jake",
     "lastName": "Vorhees",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1293,7 +1292,7 @@ const guestListData = [
     "firstName": "Kodie",
     "lastName": "Vorhees",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1302,7 +1301,7 @@ const guestListData = [
     "firstName": "Suzanne",
     "lastName": "Daly",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1311,7 +1310,7 @@ const guestListData = [
     "firstName": "Suzanne's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1320,7 +1319,7 @@ const guestListData = [
     "firstName": "Amy",
     "lastName": "McGuire",
     "side": "Blythe",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1329,7 +1328,7 @@ const guestListData = [
     "firstName": "Amy's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1338,7 +1337,7 @@ const guestListData = [
     "firstName": "Graham",
     "lastName": "Johnson",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1347,7 +1346,7 @@ const guestListData = [
     "firstName": "Graham's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1356,7 +1355,7 @@ const guestListData = [
     "firstName": "Katie",
     "lastName": "Cush",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1365,7 +1364,7 @@ const guestListData = [
     "firstName": "Stella",
     "lastName": "Wang",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1374,7 +1373,7 @@ const guestListData = [
     "firstName": "Sara",
     "lastName": "Schlesinger",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1383,7 +1382,7 @@ const guestListData = [
     "firstName": "Sean",
     "lastName": "OTS",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1392,7 +1391,7 @@ const guestListData = [
     "firstName": "Hannah",
     "lastName": "McIsaac",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1401,7 +1400,7 @@ const guestListData = [
     "firstName": "Hannah's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1410,7 +1409,7 @@ const guestListData = [
     "firstName": "Sophie",
     "lastName": "Book",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1419,7 +1418,7 @@ const guestListData = [
     "firstName": "Cilla",
     "lastName": "Bay",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1428,7 +1427,7 @@ const guestListData = [
     "firstName": "Cilla's +1",
     "lastName": "",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1437,7 +1436,7 @@ const guestListData = [
     "firstName": "Josh",
     "lastName": "Wertzberger",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1446,7 +1445,7 @@ const guestListData = [
     "firstName": "Katherine",
     "lastName": "Wertzberger",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1455,7 +1454,7 @@ const guestListData = [
     "firstName": "Matt",
     "lastName": "Bartels",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1464,7 +1463,7 @@ const guestListData = [
     "firstName": "Kaitlyn",
     "lastName": "Haase",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1473,7 +1472,7 @@ const guestListData = [
     "firstName": "Zack",
     "lastName": "Horwitz",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1482,7 +1481,7 @@ const guestListData = [
     "firstName": "Caroline",
     "lastName": "Zubieta",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1491,7 +1490,7 @@ const guestListData = [
     "firstName": "Matthew",
     "lastName": "",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1500,7 +1499,7 @@ const guestListData = [
     "firstName": "Maggie",
     "lastName": "Haas",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1509,7 +1508,7 @@ const guestListData = [
     "firstName": "John",
     "lastName": "Sittu",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1518,7 +1517,7 @@ const guestListData = [
     "firstName": "Cortney",
     "lastName": "",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1527,7 +1526,7 @@ const guestListData = [
     "firstName": "Lucas",
     "lastName": "Carter",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1536,7 +1535,7 @@ const guestListData = [
     "firstName": "Emily",
     "lastName": "",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1545,7 +1544,7 @@ const guestListData = [
     "firstName": "Christopher",
     "lastName": "Sides",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1554,7 +1553,7 @@ const guestListData = [
     "firstName": "Christopher's +1",
     "lastName": "",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1563,7 +1562,7 @@ const guestListData = [
     "firstName": "Eric",
     "lastName": "Reit",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1572,7 +1571,7 @@ const guestListData = [
     "firstName": "Mark",
     "lastName": "Steelman",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1581,7 +1580,7 @@ const guestListData = [
     "firstName": "Mark's +1",
     "lastName": "",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1590,7 +1589,7 @@ const guestListData = [
     "firstName": "Ethan",
     "lastName": "Miller",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1599,7 +1598,7 @@ const guestListData = [
     "firstName": "Aubrea",
     "lastName": "Stoltz",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1608,7 +1607,7 @@ const guestListData = [
     "firstName": "Andrew",
     "lastName": "K",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1617,7 +1616,7 @@ const guestListData = [
     "firstName": "Div",
     "lastName": "Malhotra",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1626,7 +1625,7 @@ const guestListData = [
     "firstName": "Cam",
     "lastName": "Vasallo",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1635,7 +1634,7 @@ const guestListData = [
     "firstName": "Cameron",
     "lastName": "Jarnot",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1644,7 +1643,7 @@ const guestListData = [
     "firstName": "Pam",
     "lastName": "Romero-Cruz",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1653,7 +1652,7 @@ const guestListData = [
     "firstName": "Evan",
     "lastName": "Nichols",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1662,7 +1661,7 @@ const guestListData = [
     "firstName": "Brett",
     "lastName": "Lardaro",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1671,7 +1670,7 @@ const guestListData = [
     "firstName": "Deja",
     "lastName": "Tejada",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1680,7 +1679,7 @@ const guestListData = [
     "firstName": "Salil",
     "lastName": "Mitra",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1689,7 +1688,7 @@ const guestListData = [
     "firstName": "Ben",
     "lastName": "Harris",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1698,7 +1697,7 @@ const guestListData = [
     "firstName": "Chris",
     "lastName": "O'Farrell",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1707,7 +1706,7 @@ const guestListData = [
     "firstName": "Addy",
     "lastName": "",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1716,7 +1715,7 @@ const guestListData = [
     "firstName": "Ian",
     "lastName": "Roughen",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1725,7 +1724,7 @@ const guestListData = [
     "firstName": "Ilona",
     "lastName": "Stanback",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1734,7 +1733,7 @@ const guestListData = [
     "firstName": "Jake",
     "lastName": "",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1743,7 +1742,7 @@ const guestListData = [
     "firstName": "Lulla",
     "lastName": "Kuwinda",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1752,7 +1751,7 @@ const guestListData = [
     "firstName": "Zoe",
     "lastName": "Beutel",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1761,7 +1760,7 @@ const guestListData = [
     "firstName": "Ben",
     "lastName": "MacShane",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1770,7 +1769,7 @@ const guestListData = [
     "firstName": "Julianna",
     "lastName": "Vitolo",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1779,7 +1778,7 @@ const guestListData = [
     "firstName": "Michael",
     "lastName": "",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1788,7 +1787,7 @@ const guestListData = [
     "firstName": "Luke",
     "lastName": "Daly",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1797,7 +1796,7 @@ const guestListData = [
     "firstName": "Katie",
     "lastName": "Daly",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1806,7 +1805,7 @@ const guestListData = [
     "firstName": "Louie",
     "lastName": "Karcanes",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1815,7 +1814,7 @@ const guestListData = [
     "firstName": "Louie's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1824,7 +1823,7 @@ const guestListData = [
     "firstName": "Kyle",
     "lastName": "O'Connell",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1833,7 +1832,7 @@ const guestListData = [
     "firstName": "Kyle's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1842,7 +1841,7 @@ const guestListData = [
     "firstName": "Emma",
     "lastName": "Brooke",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1851,7 +1850,7 @@ const guestListData = [
     "firstName": "Emma's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1860,7 +1859,7 @@ const guestListData = [
     "firstName": "Laurie",
     "lastName": "Booth",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1869,7 +1868,7 @@ const guestListData = [
     "firstName": "Kate",
     "lastName": "",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1878,7 +1877,7 @@ const guestListData = [
     "firstName": "Owen",
     "lastName": "Smith",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1887,7 +1886,7 @@ const guestListData = [
     "firstName": "Andrew",
     "lastName": "Sather",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1896,7 +1895,7 @@ const guestListData = [
     "firstName": "Scott",
     "lastName": "Moss",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1905,7 +1904,7 @@ const guestListData = [
     "firstName": "Cassie",
     "lastName": "Moss",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1914,7 +1913,7 @@ const guestListData = [
     "firstName": "Gil",
     "lastName": "Blistrunus",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1923,7 +1922,7 @@ const guestListData = [
     "firstName": "Riya",
     "lastName": "Chandaria",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1932,7 +1931,7 @@ const guestListData = [
     "firstName": "Riya's +1",
     "lastName": "",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1941,7 +1940,7 @@ const guestListData = [
     "firstName": "Robiny",
     "lastName": "Jamerson",
     "side": "Anson",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1950,7 +1949,7 @@ const guestListData = [
     "firstName": "Robiny's +1",
     "lastName": "",
     "side": "Anson",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1959,7 +1958,7 @@ const guestListData = [
     "firstName": "Ana",
     "lastName": "Hugener",
     "side": "Anson",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1968,7 +1967,7 @@ const guestListData = [
     "firstName": "Tommy",
     "lastName": "",
     "side": "Anson",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1977,7 +1976,7 @@ const guestListData = [
     "firstName": "Elisabeth",
     "lastName": "Spencer",
     "side": "Anson",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1986,7 +1985,7 @@ const guestListData = [
     "firstName": "Emilio",
     "lastName": "",
     "side": "Anson",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -1995,7 +1994,7 @@ const guestListData = [
     "firstName": "Meredith",
     "lastName": "Breach Bos",
     "side": "Anson",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2004,7 +2003,7 @@ const guestListData = [
     "firstName": "Sean",
     "lastName": "Bos",
     "side": "Anson",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2013,7 +2012,7 @@ const guestListData = [
     "firstName": "Mark",
     "lastName": "Tomasavic",
     "side": "Anson",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2022,7 +2021,7 @@ const guestListData = [
     "firstName": "Mark's +1",
     "lastName": "",
     "side": "Anson",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2031,7 +2030,7 @@ const guestListData = [
     "firstName": "Josh",
     "lastName": "Clayton",
     "side": "Anson",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2040,7 +2039,7 @@ const guestListData = [
     "firstName": "Agus",
     "lastName": "Sergi",
     "side": "Anson",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2049,7 +2048,7 @@ const guestListData = [
     "firstName": "Chris",
     "lastName": "",
     "side": "Anson",
-    "relation": "Other - TBD",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2058,7 +2057,7 @@ const guestListData = [
     "firstName": "Sierra",
     "lastName": "Luciano",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2067,7 +2066,7 @@ const guestListData = [
     "firstName": "Pete",
     "lastName": "Murphy",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2076,7 +2075,7 @@ const guestListData = [
     "firstName": "Lilli",
     "lastName": "Mercho",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2085,7 +2084,7 @@ const guestListData = [
     "firstName": "Jacob",
     "lastName": "Baca",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2094,7 +2093,7 @@ const guestListData = [
     "firstName": "AJ",
     "lastName": "Chaganti",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2103,7 +2102,7 @@ const guestListData = [
     "firstName": "The Sparkleys",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2112,7 +2111,7 @@ const guestListData = [
     "firstName": "The Sparkleys's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2121,7 +2120,7 @@ const guestListData = [
     "firstName": "Tom and Patty",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2130,7 +2129,7 @@ const guestListData = [
     "firstName": "Tom and Patty's +1",
     "lastName": "",
     "side": "Blythe",
-    "relation": "Family Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2139,7 +2138,7 @@ const guestListData = [
     "firstName": "Peter",
     "lastName": "Partee",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2148,7 +2147,7 @@ const guestListData = [
     "firstName": "Jane",
     "lastName": "Partee",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2157,7 +2156,7 @@ const guestListData = [
     "firstName": "Lynn",
     "lastName": "Long",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2166,7 +2165,7 @@ const guestListData = [
     "firstName": "Gib",
     "lastName": "Long",
     "side": "Anson",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2175,7 +2174,7 @@ const guestListData = [
     "firstName": "Christina",
     "lastName": "Smith",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2184,7 +2183,7 @@ const guestListData = [
     "firstName": "Caleb",
     "lastName": "Dyhrberg",
     "side": "Blythe",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2193,7 +2192,7 @@ const guestListData = [
     "firstName": "Jon",
     "lastName": "",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   },
   {
@@ -2202,7 +2201,7 @@ const guestListData = [
     "firstName": "Alexa",
     "lastName": "Landsberger",
     "side": "Both",
-    "relation": "Friend",
+    "relation": "Invitee",
     "tier": 1
   }
 ];
