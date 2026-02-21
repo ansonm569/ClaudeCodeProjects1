@@ -270,62 +270,87 @@ document.addEventListener('DOMContentLoaded', () => {
         // Set guest ID
         document.getElementById('guest-id').value = guest.id;
 
-        // Generate party attendance checkboxes
+        // Generate per-member attendance radio buttons (Will Attend / Unable to Attend)
         const partyAttendanceContainer = document.getElementById('party-attendance-container');
         partyAttendanceContainer.innerHTML = `
             <div class="event-section">
                 <h4 class="event-title">Welcome Drinks</h4>
                 <p class="event-details">April 16, 2027 at 7:00 PM</p>
-                <div class="checkbox-group">
+                <div class="attendance-rows">
                     ${partyMembers.map(member => `
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="welcome-${member.id}" data-guest-id="${member.id}" data-event="welcome" class="party-checkbox">
-                            <span class="checkbox-custom"></span>
-                            ${member.firstName} ${member.lastName}
-                        </label>
+                        <div class="party-member-row">
+                            <span class="party-member-name">${member.firstName} ${member.lastName}</span>
+                            <div class="attendance-options">
+                                <label class="radio-label">
+                                    <input type="radio" name="welcome-${member.id}" value="attending" data-guest-id="${member.id}" data-event="welcome" class="party-radio" checked>
+                                    <span class="radio-custom"></span>
+                                    Will Attend
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="welcome-${member.id}" value="declined" data-guest-id="${member.id}" data-event="welcome" class="party-radio">
+                                    <span class="radio-custom"></span>
+                                    Unable to Attend
+                                </label>
+                            </div>
+                        </div>
                     `).join('')}
                 </div>
             </div>
             <div class="event-section">
                 <h4 class="event-title">Wedding Ceremony & Reception</h4>
                 <p class="event-details">April 17, 2027 at 4:00 PM</p>
-                <div class="checkbox-group">
+                <div class="attendance-rows">
                     ${partyMembers.map(member => `
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="wedding-${member.id}" data-guest-id="${member.id}" data-event="wedding" class="party-checkbox">
-                            <span class="checkbox-custom"></span>
-                            ${member.firstName} ${member.lastName}
-                        </label>
+                        <div class="party-member-row">
+                            <span class="party-member-name">${member.firstName} ${member.lastName}</span>
+                            <div class="attendance-options">
+                                <label class="radio-label">
+                                    <input type="radio" name="wedding-${member.id}" value="attending" data-guest-id="${member.id}" data-event="wedding" class="party-radio" checked>
+                                    <span class="radio-custom"></span>
+                                    Will Attend
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="wedding-${member.id}" value="declined" data-guest-id="${member.id}" data-event="wedding" class="party-radio">
+                                    <span class="radio-custom"></span>
+                                    Unable to Attend
+                                </label>
+                            </div>
+                        </div>
                     `).join('')}
                 </div>
             </div>
         `;
 
-        // Show/hide dietary and song fields based on checkbox selection
-        const partyCheckboxes = document.querySelectorAll('.party-checkbox');
+        // Show/hide dietary and song fields based on whether anyone is attending
         const toggleConditionalFields = () => {
-            const anyChecked = Array.from(partyCheckboxes).some(cb => cb.checked);
-            if (dietaryGroup) dietaryGroup.style.display = anyChecked ? 'block' : 'none';
-            if (songGroup) songGroup.style.display = anyChecked ? 'block' : 'none';
+            const anyAttending = Array.from(document.querySelectorAll('.party-radio[value="attending"]'))
+                .some(r => r.checked);
+            if (dietaryGroup) dietaryGroup.style.display = anyAttending ? 'block' : 'none';
+            if (songGroup) songGroup.style.display = anyAttending ? 'block' : 'none';
         };
 
-        partyCheckboxes.forEach(cb => cb.addEventListener('change', toggleConditionalFields));
+        document.querySelectorAll('.party-radio').forEach(r => r.addEventListener('change', toggleConditionalFields));
         toggleConditionalFields();
 
         // Pre-fill from existing RSVP (e.g. returning via edit link)
         if (existingRsvp) {
             document.getElementById('guest-email').value = existingRsvp.email || '';
+            const phoneInput = document.getElementById('guest-phone');
+            if (phoneInput) phoneInput.value = existingRsvp.phone || '';
             document.getElementById('dietary').value = existingRsvp.dietary_restrictions || '';
             document.getElementById('song').value = existingRsvp.song_request || '';
             document.getElementById('message').value = existingRsvp.message || '';
 
-            // Pre-check attendance boxes
+            // Pre-set radio buttons from saved attendance
             const attendance = existingRsvp.party_attendance || {};
-            partyCheckboxes.forEach(cb => {
-                const gId = cb.dataset.guestId;
-                const evt = cb.dataset.event;
-                if (evt === 'welcome' && attendance[gId]?.welcomeDrinks) cb.checked = true;
-                if (evt === 'wedding' && attendance[gId]?.wedding) cb.checked = true;
+            partyMembers.forEach(member => {
+                const gId = String(member.id);
+                const welcomeVal = attendance[gId]?.welcomeDrinks === false ? 'declined' : 'attending';
+                const weddingVal = attendance[gId]?.wedding === false ? 'declined' : 'attending';
+                const welcomeRadio = document.querySelector(`input[name="welcome-${member.id}"][value="${welcomeVal}"]`);
+                const weddingRadio = document.querySelector(`input[name="wedding-${member.id}"][value="${weddingVal}"]`);
+                if (welcomeRadio) welcomeRadio.checked = true;
+                if (weddingRadio) weddingRadio.checked = true;
             });
             toggleConditionalFields();
 
@@ -352,27 +377,18 @@ document.addEventListener('DOMContentLoaded', () => {
     rsvpForm.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        // Collect party attendance data
-        const partyCheckboxes = document.querySelectorAll('.party-checkbox');
-        const anyEventSelected = Array.from(partyCheckboxes).some(cb => cb.checked);
-
-        if (!anyEventSelected) {
-            alert('Please select at least one person for at least one event.');
-            return;
-        }
-
         const formData = new FormData(rsvpForm);
 
-        // Build party attendance map: { [guestId]: { welcomeDrinks, wedding } }
+        // Build party attendance map from radio buttons: { [guestId]: { welcomeDrinks, wedding } }
         const partyAttendance = {};
-        partyCheckboxes.forEach(cb => {
-            const guestId = cb.dataset.guestId;
-            const event = cb.dataset.event;
-            if (!partyAttendance[guestId]) {
-                partyAttendance[guestId] = { welcomeDrinks: false, wedding: false };
-            }
-            if (event === 'welcome' && cb.checked) partyAttendance[guestId].welcomeDrinks = true;
-            if (event === 'wedding' && cb.checked) partyAttendance[guestId].wedding = true;
+        currentGuest.partyMembers.forEach(member => {
+            const gId = String(member.id);
+            const welcomeRadio = document.querySelector(`input[name="welcome-${member.id}"]:checked`);
+            const weddingRadio = document.querySelector(`input[name="wedding-${member.id}"]:checked`);
+            partyAttendance[gId] = {
+                welcomeDrinks: welcomeRadio?.value === 'attending',
+                wedding: weddingRadio?.value === 'attending'
+            };
         });
 
         // Build party members array with names (for email)
@@ -386,6 +402,7 @@ document.addEventListener('DOMContentLoaded', () => {
             primaryGuestId: parseInt(formData.get('guestId')),
             primaryGuestName: `${currentGuest.firstName} ${currentGuest.lastName}`,
             email: formData.get('email'),
+            phone: formData.get('phone') || null,
             partyMembers: partyMembersForApi,
             partyAttendance,
             dietaryRestrictions: formData.get('dietary') || null,

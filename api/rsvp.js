@@ -29,6 +29,7 @@ async function handleSubmit(req, res) {
         primaryGuestId,
         primaryGuestName,
         email,
+        phone,
         partyMembers,        // [{ id, name }]
         partyAttendance,     // { [guestId]: { welcomeDrinks, wedding } }
         dietaryRestrictions,
@@ -48,6 +49,7 @@ async function handleSubmit(req, res) {
             primary_guest_id: primaryGuestId,
             primary_guest_name: primaryGuestName,
             email,
+            phone: phone || null,
             party_members: partyMembers,
             party_attendance: partyAttendance,
             dietary_restrictions: dietaryRestrictions || null,
@@ -81,6 +83,7 @@ async function handleSubmit(req, res) {
                 firstName,
                 welcomeAttendees,
                 weddingAttendees,
+                phone,
                 dietaryRestrictions,
                 songRequest,
                 message,
@@ -121,7 +124,7 @@ async function handleLookup(req, res) {
 // -------------------------------------------------------
 // Email HTML builder
 // -------------------------------------------------------
-function buildEmailHtml({ firstName, welcomeAttendees, weddingAttendees, dietaryRestrictions, songRequest, message, editLink }) {
+function buildEmailHtml({ firstName, welcomeAttendees, weddingAttendees, phone, dietaryRestrictions, songRequest, message, editLink }) {
     const darkGreen = '#3d5a30';
     const oliveGreen = '#8B9B7E';
     const bgGray = '#f4f4f0';
@@ -188,6 +191,7 @@ function buildEmailHtml({ firstName, welcomeAttendees, weddingAttendees, dietary
 
           <!-- Optional fields -->
           <table width="100%" cellpadding="0" cellspacing="0">
+            ${optionalRow('Phone', phone)}
             ${optionalRow('Dietary Restrictions', dietaryRestrictions)}
             ${optionalRow('Song Request', songRequest)}
             ${message ? optionalRow('Note to the Couple', `<em>"${message}"</em>`) : ''}
