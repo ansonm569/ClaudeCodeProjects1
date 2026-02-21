@@ -596,6 +596,7 @@ body {
 
 .form-group input[type="text"],
 .form-group input[type="email"],
+.form-group input[type="tel"],
 .form-group select,
 .form-group textarea {
     width: 100%;
@@ -654,20 +655,27 @@ body {
     flex-shrink: 0;
 }
 
+.radio-custom::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: var(--color-accent);
+    transition: width 0.2s ease, height 0.2s ease;
+}
+
 .radio-label input[type="radio"]:checked + .radio-custom {
     border-color: var(--color-accent);
 }
 
 .radio-label input[type="radio"]:checked + .radio-custom::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 10px;
     height: 10px;
-    border-radius: 50%;
-    background: var(--color-accent);
 }
 
 /* Attendance rows (radio buttons per guest per event) */
