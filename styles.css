@@ -1473,6 +1473,20 @@ body {
     font-style: italic;
 }
 
+.registry-logo-text {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    color: var(--color-primary-dark);
+    letter-spacing: 1px;
+}
+
+.registry-btn-disabled {
+    background: var(--color-text-light);
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
 .registry-message {
     text-align: center;
     padding: 32px;
